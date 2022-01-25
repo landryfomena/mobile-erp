@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_add"
+        android:icon="@drawable/ic_baseline_add_24"
+        app:showAsAction="ifRoom"
+        android:title="Add">
+    </item>
+    <item
+        android:id="@+id/create_action"
+        app:showAsAction="never"
+        android:title="Create">
+    </item>
+    <item
+        android:id="@+id/update_action"
+        app:showAsAction="never"
+        android:title="Read">
+    </item>
+    <item
+        android:id="@+id/read_action"
+        app:showAsAction="never"
+        android:title="Update">
+    </item>
+    <item
+        android:id="@+id/delete_action"
+        app:showAsAction="never"
+        android:title="Delete">
+    </item>
+</menu>

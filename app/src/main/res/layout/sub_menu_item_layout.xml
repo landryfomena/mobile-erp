@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="4dp"
+    android:layout_height="wrap_content">
+
+  <ImageView
+      android:layout_width="40dp"
+      android:id="@+id/sub_menu_icon"
+      android:src="@drawable/ic_baseline_bubble_chart_24"
+      android:layout_marginRight="16dp"
+      android:layout_height="40dp"  />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/sub_menu_title"
+        android:text="SUb menu text"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

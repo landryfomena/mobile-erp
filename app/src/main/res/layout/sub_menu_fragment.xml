@@ -5,9 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.submenu.SubMenuFragment">
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
-
+        android:id="@+id/sub_menu_list"
+        android:layout_height="match_parent"/>
 </FrameLayout>

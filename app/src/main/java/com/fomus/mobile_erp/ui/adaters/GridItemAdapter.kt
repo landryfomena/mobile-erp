@@ -7,6 +7,12 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.fomus.mobile_erp.R
+import com.fomus.mobile_erp.entities.local.Menu
+import com.xwray.groupie.kotlinandroidextensions.GroupieViewHolder
+import com.xwray.groupie.kotlinandroidextensions.Item
+import kotlinx.android.synthetic.main.module_item.view.*
 import java.lang.Exception
 
 /**
@@ -16,43 +22,15 @@ import java.lang.Exception
  * @property onAgentSelected
  * @constructor Create empty Grid item adapter
  */
-class GridItemAdapter(private val agentList: ArrayList<Agent>,var onAgentSelected:(agent:Agent)->Unit) :
-    RecyclerView.Adapter<GridItemAdapter.ViewHolder>() {
-
-
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val cardImages: ImageView = itemView.findViewById(R.id.cardImages)
-        val cardTitle: TextView = itemView.findViewById(R.id.cardTitle)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.agent_item, parent, false)
-        return ViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.cardTitle.text = agentList[position].agentName
-         try{
-             Picasso.get().load(agentList[position].photoAgent).error(R.drawable.ic_baseline_broken_image_24).into(holder.cardImages)
-
-        }catch (e:Exception){
-
+class GridItemAdapter(var menu: Menu):Item(){
+    override fun bind(viewHolder: GroupieViewHolder, position: Int) {
+        viewHolder.itemView.menu_title.text=menu.menuName
+        Glide.with(viewHolder.itemView.context).load(menu.menuIcon).error(R.drawable.ic_baseline_broken_image_24).into(viewHolder.itemView.menu_image)
+        viewHolder.itemView.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_subMenuFragment)
         }
-        
-
-        // Navigation
-        holder.itemView.setOnClickListener {
-            onAgentSelected(agentList[position])
-            Navigation.findNavController(it).navigate(R.id.action_navigation_dashboard_to_agentDetailsFragment)
-        }
-
-        holder.itemView
     }
 
-    override fun getItemCount(): Int {
-        return agentList.size
-
-    }
-
+    override fun getLayout()=R.layout.module_item
 
 }

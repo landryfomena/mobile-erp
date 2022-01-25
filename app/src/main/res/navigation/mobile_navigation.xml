@@ -9,7 +9,11 @@
         android:id="@+id/navigation_home"
         android:name="com.fomus.mobile_erp.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_subMenuFragment"
+            app:destination="@id/subMenuFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +26,18 @@
         android:name="com.fomus.mobile_erp.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/subMenuFragment"
+        android:name="com.fomus.mobile_erp.ui.submenu.SubMenuFragment"
+        android:label="sub_menu_fragment"
+        tools:layout="@layout/sub_menu_fragment" >
+        <action
+            android:id="@+id/action_subMenuFragment_to_actionsScreenFragment"
+            app:destination="@id/actionsScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/actionsScreenFragment"
+        android:name="com.fomus.mobile_erp.ui.actions.ActionsScreenFragment"
+        android:label="actions_screen_fragment"
+        tools:layout="@layout/actions_screen_fragment" />
 </navigation>
