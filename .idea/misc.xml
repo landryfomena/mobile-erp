@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_account_login_focused.xml" value="0.10520833333333333" />
+        <entry key="app/src/main/res/drawable/ic_location_focused.xml" value="0.10520833333333333" />
+        <entry key="app/src/main/res/drawable/ic_profession_focused.xml" value="0.10520833333333333" />
         <entry key="app/src/main/res/layout/actions_screen_fragment.xml" value="0.10280797101449275" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10960144927536232" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.10280797101449275" />
