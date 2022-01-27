@@ -41,6 +41,7 @@ class SubMenuFragment : Fragment() {
     }
     var items= mutableListOf<SubMenuAdapter>()
     private fun initSubMenus(){
+        items.clear()
         (0..8).forEach {
             items.add(
                 SubMenuAdapter(SubMenu("12345","","sub menu "+it))

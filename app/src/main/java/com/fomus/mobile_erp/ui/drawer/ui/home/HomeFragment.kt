@@ -50,6 +50,7 @@ class HomeFragment : Fragment() {
         initMenus()
     }
     private fun initMenus(){
+        items= arrayListOf()
         (0..8).forEach {
             items.add(GridItemAdapter(Menu("12345","menu "+it,"https://www.google.com/search?q=menu+icon&sxsrf=AOaemvLTzCbjCqgpKC7NsVwi81jjgliMFA:1643081578489&tbm=isch&source=iu&ictx=1&vet=1&fir=6YSXc9LKPxKSLM%252CQbwTHi7nB2t6LM%252C_%253BltwQk4CnKggt4M%252CCaZgvGustqy1GM%252C_%253BduK_uWi3MUKRrM%252CmD-6pQBi0vPxCM%252C_%253BMaKYT7FDMoErLM%252CPrcHsFtvcesSgM%252C_%253BiWtg0kHSxWpsAM%252Cp4GUBDTSrjKoZM%252C_%253Ba4uan7Wh7mur3M%252C3dWgTfyfRHzEeM%252C_%253BgdONx8Pv0YQffM%252C6OUAXpu_AdBz1M%252C_%253BzABUA1jHq5lqXM%252C75VQ-G4zjD9cYM%252C_%253B7YpXUKE50FHKsM%252CCruvhHwmlHVMbM%252C_%253BdsNaNPu_qwx9RM%252Cn5yq8-vgUsaNSM%252C_%253BH_G34tk2-ySLAM%252CJSobSrMOTWzBAM%252C_%253BxG3UTdTUbb2oSM%252CYu_IyrgyYg5xGM%252C_%253Bfei_OzBHSLC7JM%252CgdTd0KGrZKaYCM%252C_%253Bvq96K0iGVhnbGM%252Cj0Bqa6-P67OgFM%252C_%253BgCYssBQ0931O3M%252CCaZgvGustqy1GM%252C_%253BX5hg7nDbfNYyeM%252CLXXAonpHuKUuNM%252C_&usg=AI4_-kTU1GdxkZYbyicLADgeTNHKNKgBmg&sa=X&ved=2ahUKEwjs_Mnu-8v1AhWYQEEAHaP_AlkQ9QF6BAgHEAE#imgrc=6YSXc9LKPxKSLM")))
         }
