@@ -10,9 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mobileerp">
         <activity
+            android:name=".ui.drawer.DrawerActivity"
+            android:exported="true"
+            android:label="@string/title_activity_drawer"
+            android:theme="@style/Theme.Mobileerp.NoActionBar" />
+        <activity
             android:name=".ui.smplashScreen.SplashScreen"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,8 +26,8 @@
         </activity>
         <activity
             android:name=".ui.authentication.login.LoginActivity"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
-            android:exported="true" >
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -17,7 +17,7 @@ class SubMenuAdapter(var subMenu: SubMenu) : Item() {
             .error(R.drawable.ic_baseline_broken_image_24).into(viewHolder.itemView.sub_menu_icon)
         viewHolder.itemView.setOnClickListener {
             Navigation.findNavController(it)
-                .navigate(R.id.action_subMenuFragment_to_actionsScreenFragment)
+                .navigate(R.id.action_subMenuFragment2_to_actionsScreenFragment2)
 
         }
     }

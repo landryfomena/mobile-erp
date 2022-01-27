@@ -3,14 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_intersection.xml" value="0.19375" />
+        <entry key="app/src/main/res/drawable-v24/rectangle_with_rounded_shape.xml" value="0.19375" />
         <entry key="app/src/main/res/drawable/ic_account_login_focused.xml" value="0.10520833333333333" />
         <entry key="app/src/main/res/drawable/ic_location_focused.xml" value="0.10520833333333333" />
         <entry key="app/src/main/res/drawable/ic_profession_focused.xml" value="0.10520833333333333" />
+        <entry key="app/src/main/res/drawable/rectangle_with_rounded_shape.xml" value="0.19375" />
         <entry key="app/src/main/res/layout/actions_screen_fragment.xml" value="0.10280797101449275" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.10960144927536232" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.10280797101449275" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.10280797101449275" />
+        <entry key="app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_drawer.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.10280797101449275" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.10280797101449275" />
         <entry key="app/src/main/res/layout/module_item.xml" value="0.10280797101449275" />
         <entry key="app/src/main/res/layout/sub_menu_fragment.xml" value="0.1" />

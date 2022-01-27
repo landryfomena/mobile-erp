@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import com.fomus.mobile_erp.MainActivity
 import com.fomus.mobile_erp.R
+import com.fomus.mobile_erp.ui.drawer.DrawerActivity
 import kotlinx.android.synthetic.main.activity_main2.*
 
 class LoginActivity : AppCompatActivity() {
@@ -52,7 +53,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun signIn(login: String, password: String) {
-        var intent = Intent(applicationContext, MainActivity::class.java)
+        var intent = Intent(applicationContext, DrawerActivity::class.java)
         startActivity(intent)
     }
     private fun signupAction() {

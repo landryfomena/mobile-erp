@@ -1,17 +1,12 @@
-package com.fomus.mobile_erp.ui.home
+package com.fomus.mobile_erp.ui.drawer.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.fomus.mobile_erp.R
 import com.fomus.mobile_erp.databinding.FragmentHomeBinding
 import com.fomus.mobile_erp.entities.local.Menu
 import com.fomus.mobile_erp.ui.adaters.GridItemAdapter

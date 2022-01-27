@@ -27,7 +27,7 @@ class GridItemAdapter(var menu: Menu):Item(){
         viewHolder.itemView.menu_title.text=menu.menuName
         Glide.with(viewHolder.itemView.context).load(menu.menuIcon).error(R.drawable.ic_baseline_broken_image_24).into(viewHolder.itemView.menu_image)
         viewHolder.itemView.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_navigation_home_to_subMenuFragment)
+            Navigation.findNavController(it).navigate(R.id.action_nav_home_to_subMenuFragment2)
         }
     }
 
